@@ -2,6 +2,8 @@
 
 ## Description
 
+When unicode characters and ascii characters mixed, according to your needs, calculate the length of the string
+
 ## Example
 
 need composer

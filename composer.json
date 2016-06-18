@@ -1,6 +1,6 @@
 {
     "name": "shouding/mix-string",
-    "description": "if unicode and alpha word mixd, can calculate length for your need",
+    "description": "When unicode characters and ascii characters mixed, according to your needs, calculate the length of the string",
     "type": "library",
     "license": "BSD",
     "authors": [
