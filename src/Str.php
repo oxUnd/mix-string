@@ -3,15 +3,13 @@ namespace Shouding\Mix;
 
 use Stringy\Stringy as S;
 
-class Str
-{
+class Str {
 
     const TYPE_WORD = 0x0001;
     const TYPE_CHAR = 0x0010;
     const TYPE_BYTES = 0x0011;
 
-    public static function length($string, $type = self::TYPE_WORD)
-    {
+    public static function length($string, $type = self::TYPE_WORD) {
 
         if (trim($string) === '') {
             return 0;
@@ -46,8 +44,12 @@ class Str
                 $len = S::create($string)->length();
 
                 break;
-            default:
+            case self::TYPE_BYTES:
                 $len = strlen($string);
+
+                break;
+            default:
+                throw new \Exception('What do you want to do? invalid type ' . $type);
 
                 break;
         }
